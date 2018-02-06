@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="projetointegrador.com.projetointegrador.Main2Activity">
+
+    <EditText
+        android:id="@+id/editNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="67dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnCalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular IMC"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/editPesoM"
+        android:layout_alignStart="@+id/editPesoM"
+        android:layout_alignRight="@+id/editPesoM"
+        android:layout_alignEnd="@+id/editPesoM" />
+
+    <ImageView
+        android:id="@+id/imgResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/maleicon"
+        android:layout_marginBottom="14dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/editPesoM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_above="@+id/btnCalc"
+        android:layout_alignLeft="@+id/editAlturaM"
+        android:layout_alignStart="@+id/editAlturaM" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editPesoM"
+        android:layout_alignLeft="@+id/editPesoM"
+        android:layout_alignStart="@+id/editPesoM"
+        android:text="Seu Peso (KG)"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sua altura (MT"
+        android:textSize="18sp"
+        android:layout_below="@+id/editNome"
+        android:layout_alignLeft="@+id/editNome"
+        android:layout_alignStart="@+id/editNome"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editNome"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/editNome"
+        android:text="Seu Nome"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editAlturaM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editNome"
+        android:layout_alignRight="@+id/editNome"
+        android:layout_below="@+id/textView6"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editPesoM"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="74dp"
+        android:textSize="18sp" />
+
+</RelativeLayout>
